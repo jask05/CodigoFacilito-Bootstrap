@@ -1,0 +1,54 @@
+@import "../less/bootstrap.less";
+@import "../less/responsive.less";
+
+body {
+	padding-top: 60px;
+	
+	section.landing {
+		#gradient > .radial(lighten(@linkColor,20%),darken(@linkColor,5%));  
+		text-align: center;
+		h1 {
+			color: @white;
+			text-shadow: 4px 3px 3px rgba(0,0,0,0.5);
+			font-size: 8em;
+		}
+		h2 {
+			font-size: 2em;
+			padding: 1em 0;
+			text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+		} 
+	}
+
+	.padding {
+		padding: 12em 0;	
+	}
+	.theme {
+		background-color: lighten(@linkColor, 60%);
+	}
+	.dark {
+		background-color: lighten(@grayDark, 10%);
+		color: @white;
+	}
+
+	footer.padding {
+		#gradient > .vertical(@grayDarker, @grayDark); 
+		color: @white;
+		padding: 1em 0;
+	}
+}
+ /* Escritorio o tv */
+@media (min-width: 1200px) {
+  /*body { color: red;}*/
+}
+/* Escritorio pequeño o una tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* body { color: green;} */
+}
+/* Tablet o Smartphone */
+@media (max-width: 767px) {
+  /* body { color: blue;} */
+}
+/* Smartphone */
+@media (max-width: 480px) {
+  /* body { color: yellow;} */
+}

@@ -1,0 +1,65 @@
+@import "../less/bootstrap.less";
+@import "../less/responsive.less";
+
+body {
+	padding-top: 60px;
+	
+	section.landing{
+		text-align: center;
+
+		#gradient > .radial(lighten(@linkColor, 20%),darken(@linkColor,5%));
+
+		h1 {
+			font-size: 6em;
+			// color: spin(@linkColor, -53);
+			// color: saturate(@linkColor, -70%);
+			color: @white;
+			text-shadow: 4px 3px 2px rgba(0,0,0,0.5); 
+		}
+
+		h2 {
+			font-size: 2em;
+			padding: 1em 0;
+			text-shadow: 1px 1px 0 rgba(255,255,255,0.4); 
+		}
+	}
+
+	.padding {
+		padding: 12em 0;
+	}
+
+	.theme-light {
+		background-color: lighten(@linkColor, 60%);
+	}
+	.theme-dark {
+		background-color: lighten(@grayDark, 10%);
+		color: @white;
+	}
+
+	footer.padding {
+		#gradient > .vertical();
+		padding: 1em 0;
+		color: @white;
+	}
+
+}
+
+/* Desktop monitor */
+@media(min-width: 1200px) {
+
+}
+
+/* Escritorio pequeño o tablet */
+@media(min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Tablet o smartphone phablet u horizontal */
+@media(max-width: 767px) {
+
+}
+
+/* Smartphone */
+@media(max-width: 480px) {
+
+}

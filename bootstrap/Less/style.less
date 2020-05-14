@@ -1,0 +1,36 @@
+@import "functions.less";
+
+body {
+	color:            @color;	
+	font-family:      @font;
+	background-color: @bacground;
+	
+	& > section {
+		padding: 5em 0;
+	}
+
+	header {
+		background-color: #ccc;
+
+		h1{
+			font-size: 300px;
+		}
+	}
+
+	div.round{
+		.redondear(10px);	
+	}
+
+	div.mini-round{
+		.redondear();
+	}
+	
+	footer {
+		a{
+			&:hover {
+				color: #555;
+			}
+			color: #000;
+		} 
+	}
+}

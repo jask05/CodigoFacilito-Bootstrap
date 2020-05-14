@@ -1,0 +1,19 @@
+body {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #66bbcc;
+}
+body div.round {
+  -webkit-radius: 10px;
+  -moz-radius:    10px;
+  -ms-radius:     10px;
+  -o-radius:      10px;
+  border-radius:  10px;
+}
+body div.mini-round {
+  -webkit-radius: 5px;
+  -moz-radius:    5px;
+  -ms-radius:     5px;
+  -o-radius:      5px;
+  border-radius:  5px;
+}
